@@ -9,5 +9,8 @@ const Schema = gql`
     getAllPeople: [Person] 
     getPerson(id: Int): Person
   }
+  type Mutation {
+    addPerson(name: String): Person
+  }
 `;
 export default Schema; 
